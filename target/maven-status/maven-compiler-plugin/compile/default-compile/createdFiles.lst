@@ -1,0 +1,9 @@
+com\mysamples\ref\optym\vameork\validators\Validators.class
+com\mysamples\ref\optym\vameork\domain\ShipmentInputHeaderColumnNumberAndValuesEnum.class
+com\mysamples\spark\HelloWorld.class
+com\mysamples\ref\optym\vameork\validators\FileValidator.class
+com\mysamples\ref\optym\vameork\users\UserInputs.class
+com\mysamples\ref\optym\vameork\domain\Shipment.class
+com\mysamples\ref\optym\vameork\validators\RulesValidator.class
+com\mysamples\ref\optym\vameork\validators\FileHeaderValidator.class
+com\mysamples\ref\optym\vameork\domain\ShipmentServiceTypesEnum.class
