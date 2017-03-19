@@ -20,6 +20,10 @@ public class VameorkServiceImpl implements VameorkService {
 			resultsMap = validators.isFileValid(fileName);
 			status = parseAndLoadResults(resultsMap);
 		}
+		else{
+			resultantList = new ArrayList<String>();
+			resultantList.add("ERROR");resultantList.add("No Valid File found. Please check your input");
+		}
 
 		return status;
 	}

@@ -75,7 +75,6 @@ public class FileValidator {
 		boolean isHeaderValid = fileHeaderValidator.validateHeader();
 		if(! isHeaderValid){
 			headerErrorsList.addAll(fileHeaderValidator.errorsList);
-			System.out.println("Errors > "+ headerErrorsList.toString());
 		}
 		return isHeaderValid;
 	}

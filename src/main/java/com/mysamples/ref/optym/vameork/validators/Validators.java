@@ -18,7 +18,7 @@ public class Validators implements RulesValidator{
 				&& !(fileValidator.isFileEmpty()) 
 				&& !(fileValidator.isFileHavingOnlyHeader())
 				&& fileValidator.isHeaderValid() ){
-			results.add("SUCCESS");results.add("FILE IS VALID");results.add("FILE IS HAVING VALID HEADER");
+			results.add("SUCCESS");results.add("Input File is Valid");results.add("Input File is having valid Header and Some Contents");
 			
 			
 		}else{

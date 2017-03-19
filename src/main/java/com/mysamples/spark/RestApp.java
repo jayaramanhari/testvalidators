@@ -1,11 +1,13 @@
 package com.mysamples.spark;
-import static spark.Spark.get;
+
+import static spark.Spark.*;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 
 public class RestApp {
     public static void main(String[] args) {
+    	port(Integer.valueOf(System.getenv("PORT")));
         final VameorkService service = new VameorkServiceImpl();
         
         get("/vameork/quickfilevalidate/:id", (request, response) -> {
