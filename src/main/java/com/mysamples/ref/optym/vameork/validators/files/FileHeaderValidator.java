@@ -23,9 +23,9 @@ public class FileHeaderValidator {
 				.size() == ShipmentInputHeaderColumnNumberAndValuesEnum.values().length);
 		if (!isHeaderColumnCountValid) {
 			errorsList.add(
-					"Errors > Header Count Mismatch : found " + headerRowValuesAsList.size() + 
-					" in given file and expected header count is : " + 
-					ShipmentInputHeaderColumnNumberAndValuesEnum.values().length);
+					"Errors > Header Count Mismatch : found '" + headerRowValuesAsList.size() + 
+					"' in given file but expected header count is : '" + 
+					ShipmentInputHeaderColumnNumberAndValuesEnum.values().length+"'");
 		}
 		return isHeaderColumnCountValid;
 	}
@@ -37,8 +37,8 @@ public class FileHeaderValidator {
 				String headerVal = headerRowValuesAsList.get(count);
 				String valFromEnum = headerValuesFromEnum[count];
 				if (!(valFromEnum.equals(headerVal))) {
-					errorsList.add("Given " + (count + 1) + " header column \"" + headerVal
-							+ "\" is not matching with expected header name \"" + valFromEnum + "\"");
+					errorsList.add("Errors > Given header name '" + headerVal + "' at column '" + (count + 1)
+							+ "' is not matching with expected header name '" + valFromEnum + "'");
 				}
 			}
 		}
