@@ -80,6 +80,10 @@ public class FileValidator {
 		return isHeaderValid;
 	}
 		
+	public List<String> getHeaderErrorsList() {
+		return headerErrorsList;
+	}
+
 	private List<String> getOnlyFirstRowOfGivenFile(){
 		List<String> results = new ArrayList<>();
 		String data;

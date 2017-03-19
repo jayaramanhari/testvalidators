@@ -9,7 +9,7 @@ public class ShipmentServiceTypesEnumTest {
 	@Test
 	public void test() {
 		assert ( (ShipmentServiceTypesEnum.Standard) != null);
-		assertEquals( ShipmentServiceTypesEnum.Standard, ShipmentServiceTypesEnum.Standard.Standard);
+		assertEquals( ShipmentServiceTypesEnum.Standard, ShipmentServiceTypesEnum.Standard);
 	}
 
 }

@@ -22,9 +22,10 @@ public class FileHeaderValidator {
 		boolean isHeaderColumnCountValid = (headerRowValuesAsList
 				.size() == ShipmentInputHeaderColumnNumberAndValuesEnum.values().length);
 		if (!isHeaderColumnCountValid) {
-			errorsList.add("Errors > Header Count Mismatch : Expected > "
-					+ ShipmentInputHeaderColumnNumberAndValuesEnum.values().length + " In given file it's > "
-					+ headerRowValuesAsList.size());
+			errorsList.add(
+					"Errors > Header Count Mismatch : found " + headerRowValuesAsList.size() + 
+					" in given file and expected header count is : " + 
+					ShipmentInputHeaderColumnNumberAndValuesEnum.values().length);
 		}
 		return isHeaderColumnCountValid;
 	}
