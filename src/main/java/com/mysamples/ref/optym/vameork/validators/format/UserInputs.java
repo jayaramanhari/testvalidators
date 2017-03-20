@@ -1,4 +1,4 @@
-package com.mysamples.ref.optym.vameork.users;
+package com.mysamples.ref.optym.vameork.validators.format;
 
 public class UserInputs {
 	private String origin;
